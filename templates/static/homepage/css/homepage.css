@@ -1,0 +1,229 @@
+:root{
+    --color-white: white;
+    --color-gray: #9d9d9d;
+    --color-gray2: #C5C5C5;
+    --color-dark:rgb(26, 26, 26);
+    --color-azul: #434252;
+    --color-gray3: #605f5f;
+  }
+
+@import url('https://fonts.google.com/share?selection.family=Montserrat:wght@800');
+
+
+.img-inicio {
+    width: 100%;
+    height: auto;
+}
+
+
+
+.showcase-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color-gray3);
+    padding: 50px;
+    font-size: 20pt;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;}
+
+.showcase{
+    text-align: center;
+
+}
+
+.btn {
+    border: solid 2px var(--color-gray);
+    background-color:var(--color-azul);
+    color: var(--color-gray2);
+    max-width: 200px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.saiba {
+    padding: 15px;
+}
+
+
+/* Features */
+
+#features {
+    width: 100%;
+    background: var(--color-azul);
+    color: #eee;
+    padding: 50px;
+    text-align: center;
+    /* margin-bottom: 20px; */
+}
+
+#features-container {
+    
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 50px;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    background: #333;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.feature-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+  /* Footer */
+  #footer {
+    background: var(--color-azul);
+    color: #eee;
+    padding: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Product */
+#product {
+width: 100%;
+padding: 50px;
+font-family: 'Montserrat', sans-serif;
+}
+
+.headline{
+font-family: 'Montserrat', sans-serif;
+font-size: 20pt;
+padding: 25px;
+}
+
+#product-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#items {
+  width: 650px;
+}
+
+#items .item {
+  display: flex;
+  padding: 10px;
+  margin: 15px 0;
+  font-size: 1.2rem;
+}
+
+/* Gallery */
+#gallery {
+width: 100%;
+margin: auto;
+padding: 50px;
+background: var(--color-azul);
+color: var(--color-white);
+}
+
+#gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  justify-items: center;
+  margin-top: 20px;
+  overflow: hidden;
+  /* position: fixed; */
+  /* top: 50%; */
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
+
+}
+
+
+
+
+.gallery-image {
+/* display: inline-block; */
+width: 100%;
+height: auto;
+border-radius: 15px;
+transition: transform 0.6s ease;
+}
+
+.gallery-image:hover {
+  transform: scale(1.5);
+  /* position: absolute; */
+  /* top: 50%;
+  left: 50%; */
+  /* transform: translate(-10%, -2%); */
+}
+
+/* Testimonials */
+.testimonial {
+display: flex;
+align-items: center;
+font-size: 1.2rem;
+background: var(--color-azul);
+color: var(--color-white);
+padding: 15px;
+margin: 15px 0;
+border-radius: 5px;
+}
+
+#testimonials {
+width: 100%;
+padding: 50px;
+}
+
+#testimonials-container {
+width: 50%;
+margin: auto;
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+
+.testimonial .testimonial-image {
+height: 200px;
+width: auto;
+border-radius: 50%;
+margin: 15px;
+}
+
+/* Contato */
+#contact {
+width: 100%;
+margin: auto;
+padding: 50px;
+background: var(--color-white);
+}
+
+
+/* Estilos para o submenu */
+ul.submenu {
+  display: none; /* Esconder o submenu por padrão */
+  position:fixed;
+  background-color: var(--color-azul);
+  padding: 0;
+  list-style: none;
+}
+
+ul.submenu li {
+  padding: 10px;
+}
+
+/* Estilos para o item de menu principal */
+#navbar-items li {
+  display: inline-block;
+  position: relative;
+  padding: 10px;
+  /* background-color: #ddd; */
+}
+
+/* Mostrar o submenu quando passar o mouse sobre o item de menu principal */
+#navbar-items li:hover ul.submenu {
+  display: block;
+}

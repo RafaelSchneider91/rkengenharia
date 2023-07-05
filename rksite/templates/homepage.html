@@ -1,0 +1,130 @@
+{% extends 'base.html' %}
+
+
+{% block 'head' %}
+{% load static %}
+
+<link href="{% static 'homepage/css/homepage.css' %}" rel="stylesheet">
+
+{% endblock %}
+
+{% block 'conteudo' %}
+
+    <header class="showcase">
+        <img class="img-inicio" src="{% static 'imagens/casa_gif.gif' %}" alt="Logo">
+        {% comment %} <video controls>
+            <source src="{% static 'imagens/teste2.mp4' %}" type="video/mp4">
+        </video> {% endcomment %}
+
+        <div class="showcase-container">
+
+            <h2 class="showcase">"Construindo sonhos, erguendo futuro."</h2>
+            {% comment %} <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, sed!</p> {% endcomment %}
+            <a href="" class="btn saiba">Saiba mais!</a>
+        </div>
+    </header>
+    <!-- About -->
+    {% comment %} <section id="clients">
+        <div class="headline">Nossos clientes</div>
+        <div id="clients-container">
+            <img src="/img/netflix.png" class="client" alt="">
+            <img src="/img/google.png" class="client" alt="">
+            <img src="/img/apple.png" class="client" alt="">
+            <img src="/img/microsoft.png" class="client" alt="">
+        </div>
+    </section> {% endcomment %}
+
+    <section id="features">
+        <div class="headline">Nossos Diferenciais</div>
+        <div id="features-container">
+            <div class="feature">
+                <i class="fas fa-tachometer-alt fa-3x"></i>
+                    <span class="feature-title">Conforme a sua necessidade</span>
+                    <p >Desenvolvemos o seu projeto conforme o seu sonho</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-code fa-3x"></i>
+                <span class="feature-title">Lorem ipsum dolor sit amet.</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores animi laboriosam illo, doloremque
+                    placeat et.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-layer-group fa-3x"></i>
+                <span class="feature-title">Lorem ipsum dolor sit amet.</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores animi laboriosam illo, doloremque
+                    placeat et.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="product">
+        <div class="headline">Nossos produtos e Serviços</div>
+        <div id="product-container">
+            <img src="/img/iphone-x.png" alt="" class="iphone-x">
+            <div id="items">
+                <div class="item">
+                    <i class="fas fa-map-marked fa-2x color-primary"></i>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio expedita provident nam hic beatae
+                        voluptate!</p>
+                </div>
+                <div class="item">
+                    <i class="fas fa-users fa-2x color-primary"></i>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio expedita provident nam hic beatae
+                        voluptate!</p>
+                </div>
+                <div class="item">
+                    <i class="fas fa-glass-cheers fa-2x color-primary"></i>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio expedita provident nam hic beatae
+                        voluptate!</p>
+                </div>
+                <div class="item">
+                    <i class="fas fa-book-open fa-2x"></i>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio expedita provident nam hic beatae
+                        voluptate!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    </div>
+
+    <section id="gallery">
+        <div class="headline">Galeria</div>
+        <div id="gallery-container">
+            <div>
+                <img src="{% static 'imagens/galeria/casa1.jpg' %}" alt="" class="gallery-image">
+            </div>
+            <div>
+                <img src="{% static 'imagens/galeria/casa2.jpg' %}" alt="" class="gallery-image">
+            </div>
+            <div>
+                <img src="{% static 'imagens/galeria/casa3.jpg' %}" alt="" class="gallery-image">
+            </div>
+
+        </div>
+        
+    </section>
+
+    <section>
+        <div id="contact">
+            <div class="headline">Contato</div>
+            <div id="testimonials-container">
+                <div class="testimonial">
+                    <img src="/img/person-1.jpeg" alt="" class="testimonial-image">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, autem dolores dolorum cumque
+                        voluptas eius. Eum quisquam illum error sapiente?</p>
+                </div>
+            </div>
+        </div>
+    
+    </section>
+
+    
+        {% comment %} #TODO: VER COMO INCLUIR O CARROSEL DE IMAGENS; {% endcomment %}
+    
+    
+    </section>
+
+    
+{% endblock%}

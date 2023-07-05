@@ -1,0 +1,67 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="PT-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'base/css/base.css' %}" rel="stylesheet">
+
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
+    <title>RK Engenharia</title>
+    {% block 'head' %}{% endblock%}
+</head>
+
+
+
+<body>
+    <nav id="navbar">
+        <div id="navbar-container">
+            <a href="#">
+                <img src="{% static 'imagens/logo_v3.jpg' %}" alt="Logo">
+            </a>
+            <ul id="navbar-items">
+                <li><a href="">Início</a></li>
+                <li><a href="#features">Sobre</a></li>
+                <li><a href="#gallery">Galeria</a></li>
+                <li><a href="#contact">Fale Conosco</a></li>
+                <li><a href="#">Entrar</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="#">Area do Cliente </a>                        
+                        </li>                    
+                    </ul>
+                   
+                    
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    {% block 'body' %}
+      
+        {% block 'conteudo' %}
+            
+        {% endblock 'conteudo' %}
+      
+    {% endblock%}
+
+
+
+    <footer id="footer">
+        <p>Copyright 2023 - Todos os direitos reservados.</p>
+    </footer>
+
+    {% comment %} <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/f9e19193d6.js" crossorigin="anonymous"></script>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <!-- Our JS file -->
+    <script src="js/main.js"></script> {% endcomment %}
+</body>
+
+</html>
